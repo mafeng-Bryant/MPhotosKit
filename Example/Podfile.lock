@@ -1,0 +1,23 @@
+PODS:
+  - MLocalizedStringKit (1.0.0)
+  - MPhotosKit (1.0.0):
+    - MLocalizedStringKit (~> 1.0.0)
+
+DEPENDENCIES:
+  - MPhotosKit (from `../`)
+
+SPEC REPOS:
+  https://github.com/mafeng-Bryant/Specs:
+    - MLocalizedStringKit
+
+EXTERNAL SOURCES:
+  MPhotosKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MLocalizedStringKit: 6a7a076c228d94347ab9f37794e028e62591028c
+  MPhotosKit: 6b86b54127ffbcfab1e439a0661544ba2f7a842c
+
+PODFILE CHECKSUM: e4934b9660bb6b85e25913fbc806ec7df094ce5c
+
+COCOAPODS: 1.5.3

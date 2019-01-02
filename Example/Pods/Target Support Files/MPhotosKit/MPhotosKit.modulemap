@@ -1,0 +1,6 @@
+framework module MPhotosKit {
+  umbrella header "MPhotosKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

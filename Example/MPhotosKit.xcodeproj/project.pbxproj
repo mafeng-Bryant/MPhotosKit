@@ -39,7 +39,7 @@
 /* Begin PBXFileReference section */
 		265C06B2EFC0042DD54436DF /* Pods-MPhotosKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MPhotosKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-MPhotosKit_Example/Pods-MPhotosKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		3AB1DEC38DD23858E8B23435 /* Pods-MPhotosKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MPhotosKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MPhotosKit_Tests/Pods-MPhotosKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		4EEA123CCFEFD61B916807CC /* MPhotosKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MPhotosKit.podspec; path = ../MPhotosKit.podspec; sourceTree = "<group>"; };
+		4EEA123CCFEFD61B916807CC /* MPhotosKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MPhotosKit.podspec; path = ../MPhotosKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6003F58A195388D20070C39A /* MPhotosKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MPhotosKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -63,8 +63,8 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		77D3E708532210D3B31F28CE /* Pods-MPhotosKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MPhotosKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MPhotosKit_Example/Pods-MPhotosKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CD4599F0C42DCEFADF8A9873 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		E4B326C7F85088074CBDC626 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		CD4599F0C42DCEFADF8A9873 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		E4B326C7F85088074CBDC626 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		E6CD20AED8AFEC98DC969AB6 /* Pods-MPhotosKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MPhotosKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MPhotosKit_Tests/Pods-MPhotosKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		EE8EADF987C9A7897BE04FE6 /* Pods_MPhotosKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MPhotosKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -319,10 +319,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MPhotosKit_Example/Pods-MPhotosKit_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MLocalizedStringKit/MLocalizedStringKit.framework",
 				"${BUILT_PRODUCTS_DIR}/MPhotosKit/MPhotosKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MLocalizedStringKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MPhotosKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

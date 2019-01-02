@@ -1,0 +1,6 @@
+framework module MLocalizedStringKit {
+  umbrella header "MLocalizedStringKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
