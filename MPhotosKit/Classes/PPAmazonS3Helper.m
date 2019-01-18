@@ -7,6 +7,7 @@
 //
 
 #import "PPAmazonS3Helper.h"
+#import "UIImage+Extensions.h"
 
 AWSRegionType const CognitoRegionType = AWSRegionUSEast1;
 AWSRegionType const DefaultServiceRegionType = AWSRegionUSWest2;
