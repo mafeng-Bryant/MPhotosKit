@@ -152,7 +152,6 @@ static NSString *s3SnsFolderName = @"origin/sns";
 
 + (void)upload:(AWSS3TransferManagerUploadRequest *)uploadRequest completionBlock:(PPCompletionBlock)completionBlock {
     AWSS3TransferManager *transferManager = [AWSS3TransferManager defaultS3TransferManager];
-    
     [[transferManager upload:uploadRequest] continueWithBlock:^id(AWSTask *task) {
         if (task.error) {
             completionBlock(nil, task.error);
