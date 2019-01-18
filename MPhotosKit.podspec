@@ -40,4 +40,5 @@ TODO: Add long description of the pod here.
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'MLocalizedStringKit', '~> 1.0.0'
   s.dependency 'AWSS3', '~> 2.6.26'
+  s.dependency 'MExtensions', '~> 2.0.5'
 end
