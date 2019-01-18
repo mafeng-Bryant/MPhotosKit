@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MPhotosKit'
-  s.version          = '1.0.2'
+  s.version          = '1.0.3'
   s.summary          = 'MPhotosKit'
 
 # This description is used to generate tags and improve search results.
