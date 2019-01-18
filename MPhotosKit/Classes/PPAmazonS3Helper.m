@@ -90,8 +90,7 @@ static NSString *s3SnsFolderName = @"origin/sns";
 + (AWSS3TransferManagerUploadRequest *)uploadRequestWithImage:(UIImage *)image index:(NSInteger)index uploadImageType:(PPS3UploadImageType)uploadImageType {
     NSString *fileName = [self fileNameWithUploadImageType:uploadImageType];
     NSString *filePath = [[NSTemporaryDirectory() stringByAppendingPathComponent:uploadFolderName] stringByAppendingPathComponent:fileName];
-    NSData *imageData = [UIImage compressHandleMaxSize:CGSizeMake(kUploadImageLimitedSize, kUploadImageLimitedSize) maxDataLength:kUploadImageMaxBytes originImage:image];
-
+    NSData *imageData = [UIImage compressHandleMaxSize:CGSizeMake(1200.f, 1200.f) maxDataLength:500 * 1024 originImage:image];
     BOOL success = [imageData writeToFile:filePath atomically:YES];
     if (!success) {
         NSAssert(NO, @"Write to file failed: %i", success);
